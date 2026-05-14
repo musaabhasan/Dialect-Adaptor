@@ -1,0 +1,19 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.env
+
+# Audio and generated files
+*.wav
+*.mp3
+*.flac
+temp/
+output/
+
+# Models
+tts_models/
+
+# OS generated files
+.DS_Store
+Thumbs.db
