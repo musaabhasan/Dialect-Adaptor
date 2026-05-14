@@ -4,3 +4,4 @@ torch
 torchaudio
 soundfile
 numpy
+textual>=0.50.0

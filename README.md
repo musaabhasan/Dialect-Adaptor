@@ -37,14 +37,28 @@ A professional local Python tool for zero-shot voice cloning and text-to-speech 
 
 ## Usage
 
-1. **Run the application:**
-   ```bash
-   python app.py
-   ```
-2. The UI will automatically open in your default web browser (usually at `http://localhost:7860`).
-3. Upload a clean, short reference audio of the voice you want to clone.
-4. Select the target language (Arabic or English).
-5. Enter your text and click **Generate**. Note: The first time you run this, it will download the XTTS-v2 model weights automatically.
+You have two beautiful ways to use the Dialect Adaptor:
+
+### 1. Premium Web Interface (Browser)
+Run the following command to launch the Gradio web application:
+```bash
+python app.py
+```
+The UI will automatically open in your default web browser (usually at `http://localhost:7860`).
+
+### 2. Premium Terminal Interface (TUI)
+If you prefer staying in the terminal but still want a highly polished interface, run:
+```bash
+python tui.py
+```
+This launches an interactive, mouse-supported Terminal UI using Textual. You can upload files, select languages, and view real-time logs directly in your console.
+
+## General Steps
+1. Upload or specify a clean, short reference audio of the voice you want to clone (10-30s `.wav` file).
+2. Select the target language (Arabic or English).
+3. Enter your script text and hit **Generate**.
+
+> Note: The first time you run generation, it will download the XTTS-v2 model weights automatically.
 
 ## Disclaimer
 Please use this tool responsibly and ethically. Only clone voices with permission.
